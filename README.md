@@ -40,3 +40,66 @@ Please enter a valid filename: list.csv
 2: John Smith
 Total number of lines read: 2
 ```
+
+## PRIMER: Data File Parser
+This C++ program reads the following data from a file (i.e., an external data stream):
+
+* Noak, Jaylinn, 21500
+* Apollinaire, Venkata, 29250
+* Faith, Mara, 30000
+* Yasamin, Shukriyya, 44500
+* Zahir, Marcel, 31200
+* Maia, Ela, 45600
+* Liam, Oliver, 43300
+* Luka, Jones, 45600
+* Alexander, Smith, 20500
+
+Processes the records and displays them as a formatted, aligned and evenly spaced table as shown in the
+example below.
+```
+Initial   Last       Salary
+-------   -------    -------
+N.        Jaylinn    £21500
+A.        Venkata    £23250
+F.        Mara       £30000 
+Y.        Shukriyya  £44500 
+Z.        Marcel     £31200 
+M.        Ela        £45600 
+L.        Oliver     £43300 
+L.        Jones      £45600 
+A.        Smith      £20500 
+```
+
+## PRIMER: Phone Directory
+This C++ program uses an external data stream to permanently hold phone contacts. This program prompts the user for either a name or phone number and provides any matched record or records.
+
+Example format shown below:
+```
+Please enter a name or number to search: 0203 105 0125
+Searching 10 records ...
+Contact details:
+Ada College, T: 0203 105 0125
+--OR—
+Please enter a name or number to search: Ada College
+Searching 10 records ...
+Contact details:
+Ada College, T: 0203 105 0125
+--OR—
+Please enter a name or number to search: 0203 105 0120
+Searching 10 records ...
+Sorry, no contact details found
+```
+
+## PRIMER: Password Validator V2
+This version 2 of C++ Password Validator service reads user credentials from an external data steam (i.e., data file). As with the initial version, the program prompt the user for a username and password and compare them against already known credentials. If the username provided exists and the password matches the program displays “Welcome” followed by the users first name. If the username does not exist or the password is incorrect a “Failed to Authenticate” message is shown.
+
+Example format shown below:
+```
+Username: mike@ada.ac
+Password: AdaRocks
+Welcome Mike
+--OR--
+Username: casper@ada.ac
+Password: AdaRocks
+Failed to Authenticate
+```
